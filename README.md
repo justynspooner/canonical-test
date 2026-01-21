@@ -226,9 +226,35 @@ public static function toEs6NumberFormat(float $number): string
 }
 ```
 
+## RFC 8785 Compliance Verification
+
+Run the RFC 8785 compliance tests:
+
+```bash
+# JavaScript verification (47 tests)
+node verify-rfc8785.js
+
+# PHP verification (35 tests)
+php verify-rfc8785.php
+```
+
+These scripts test compliance with the exact examples and test vectors from [RFC 8785](https://tools.ietf.org/html/rfc8785), including:
+
+- Main serialization example with hex verification
+- Property sorting using UTF-16 code unit comparison
+- Literal serialization (null, true, false)
+- String escaping rules
+- Number serialization (IEEE 754 edge cases from Appendix B)
+- Whitespace removal
+- Recursive property sorting
+
+### Known Limitations
+
+Very large integers beyond the IEEE 754 "safe integer" range (±9007199254740991) may serialize differently between JavaScript and PHP due to differences in how each language handles the "shortest decimal representation" algorithm. These numbers are rare in practice and the RFC recommends using strings for such values.
+
 ## Test Cases
 
-The `tests/` directory contains 20 test cases:
+The `tests/` directory contains 20 general test cases:
 
 | Test | Description |
 |------|-------------|
@@ -252,6 +278,22 @@ The `tests/` directory contains 20 test cases:
 | 18-whitespace-strings.json | Strings with whitespace |
 | 19-edge-case-keys.json | Empty string, space, numeric keys |
 | 20-complex-mixed.json | Complex real-world-like structure |
+
+The `tests/rfc8785/` directory contains 11 tests specifically derived from RFC 8785:
+
+| Test | Description |
+|------|-------------|
+| 01-main-example.json | Main example from RFC Section 3.2.2 |
+| 02-property-sorting.json | UTF-16 sorting test from Section 3.2.3 |
+| 03-literals.json | null, true, false literals |
+| 04-string-escaping.json | Control character escaping rules |
+| 05-unicode-preservation.json | Unicode characters output as-is |
+| 06-numbers-ieee754.json | IEEE 754 edge cases from Appendix B |
+| 07-numbers-precision.json | Scientific notation boundary cases |
+| 08-numbers-333.json | 333333333.x precision tests |
+| 09-numbers-misc.json | Miscellaneous number edge cases |
+| 10-nested-sorting.json | Recursive object property sorting |
+| 11-no-whitespace.json | No whitespace in output |
 
 ## Creating Verifiable Hashes
 

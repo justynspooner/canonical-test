@@ -1,0 +1,9 @@
+{
+  "zero": 0,
+  "min_pos_number": 5e-324,
+  "min_neg_number": -5e-324,
+  "max_pos_number": 1.7976931348623157e+308,
+  "max_neg_number": -1.7976931348623157e+308,
+  "max_pos_int": 9007199254740992,
+  "max_neg_int": -9007199254740992
+}

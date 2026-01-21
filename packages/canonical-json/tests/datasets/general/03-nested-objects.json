@@ -1,0 +1,12 @@
+{
+  "level1": {
+    "z": {
+      "deep": "value"
+    },
+    "a": {
+      "nested": {
+        "key": "data"
+      }
+    }
+  }
+}

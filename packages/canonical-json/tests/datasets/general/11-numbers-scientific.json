@@ -1,0 +1,7 @@
+{
+  "large_exp": 1e30,
+  "small_exp": 1e-27,
+  "positive_exp": 6.022e23,
+  "negative_exp": 1.6e-19,
+  "uppercase_E": 2.5E10
+}

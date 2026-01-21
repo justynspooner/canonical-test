@@ -1,0 +1,64 @@
+{
+    "name": "dovu/canonical-json",
+    "description": "RFC 8785 JSON Canonicalization Scheme (JCS) implementation for Laravel",
+    "keywords": [
+        "laravel",
+        "json",
+        "canonicalization",
+        "rfc8785",
+        "jcs",
+        "canonical",
+        "signing",
+        "hashing"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DOVU",
+            "email": "dev@dovu.earth"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/contracts": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DOVU\\CanonicalJson\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DOVU\\CanonicalJson\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DOVU\\CanonicalJson\\CanonicalJsonServiceProvider"
+            ],
+            "aliases": {
+                "CanonicalJson": "DOVU\\CanonicalJson\\Facades\\CanonicalJson"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "": "empty key",
+  " ": "space key",
+  "123": "numeric key",
+  "true": "boolean-like key",
+  "null": "null-like key"
+}

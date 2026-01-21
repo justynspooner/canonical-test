@@ -1,0 +1,12 @@
+{
+  "backspace": "\u0008",
+  "tab": "\u0009",
+  "newline": "\u000a",
+  "formfeed": "\u000c",
+  "carriage_return": "\u000d",
+  "quote": "\u0022",
+  "backslash": "\u005c",
+  "control_0x00": "\u0000",
+  "control_0x01": "\u0001",
+  "control_0x1f": "\u001f"
+}

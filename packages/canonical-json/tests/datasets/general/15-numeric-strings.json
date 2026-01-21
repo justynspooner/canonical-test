@@ -1,0 +1,7 @@
+{
+  "string_number": "123",
+  "string_float": "3.14",
+  "actual_number": 123,
+  "actual_float": 3.14,
+  "mixed_array": ["42", 42, "0", 0]
+}

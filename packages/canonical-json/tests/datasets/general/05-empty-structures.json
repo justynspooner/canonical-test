@@ -1,0 +1,9 @@
+{
+  "emptyObject": {},
+  "emptyArray": [],
+  "emptyString": "",
+  "nestedEmpty": {
+    "obj": {},
+    "arr": []
+  }
+}

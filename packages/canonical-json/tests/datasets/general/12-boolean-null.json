@@ -1,0 +1,6 @@
+{
+  "true_val": true,
+  "false_val": false,
+  "null_val": null,
+  "array_of_literals": [true, false, null, true, null, false]
+}

@@ -1,0 +1,14 @@
+{
+  "z_outer": {
+    "z_inner": 1,
+    "a_inner": 2
+  },
+  "a_outer": {
+    "m_inner": 3,
+    "b_inner": 4
+  },
+  "array_with_objects": [
+    {"z": 1, "a": 2},
+    {"y": 3, "b": 4}
+  ]
+}

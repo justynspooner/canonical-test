@@ -1,0 +1,11 @@
+{
+    "name": "canonical-test/canonical-test",
+    "description": "Test canonical JSON conversion between JavaScript and PHP packages",
+    "type": "project",
+    "require": {
+        "root23/php-json-canonicalization": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {}
+    }
+}

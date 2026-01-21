@@ -1,0 +1,7 @@
+{
+  "spaces": "   leading and trailing   ",
+  "tabs_spaces": "\t  mixed  \t",
+  "multiline": "line1\nline2\nline3",
+  "empty": "",
+  "single_space": " "
+}

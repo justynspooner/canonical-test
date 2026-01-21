@@ -1,0 +1,10 @@
+{
+  "quotes": "He said \"Hello\"",
+  "backslash": "path\\to\\file",
+  "newline": "line1\nline2",
+  "tab": "col1\tcol2",
+  "carriage": "text\rmore",
+  "formfeed": "page\fbreak",
+  "backspace": "back\bspace",
+  "slash": "a/b/c"
+}

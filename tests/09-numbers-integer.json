@@ -1,0 +1,7 @@
+{
+  "zero": 0,
+  "positive": 42,
+  "negative": -17,
+  "large": 9007199254740991,
+  "negative_large": -9007199254740991
+}

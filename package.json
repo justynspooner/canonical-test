@@ -1,0 +1,12 @@
+{
+  "name": "canonical-test",
+  "version": "1.0.0",
+  "description": "Test canonical JSON conversion between JavaScript and PHP packages",
+  "type": "module",
+  "scripts": {
+    "canonicalize": "node canonicalize.js"
+  },
+  "dependencies": {
+    "canonicalize": "^2.0.0"
+  }
+}
